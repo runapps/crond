@@ -1,3 +1,6 @@
 #!/bin/sh
 
-sed 's/${MONGO_HOST}/'${MONGO_HOST}'/g' script.sh
+retention=1
+tailnum=$((retention + 1))
+
+echo "${tailnum}"
