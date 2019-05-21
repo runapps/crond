@@ -12,4 +12,6 @@ RUN chmod +x /script.sh
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 
+RUN ln -sf /usr/share/zoneinfo/Asia/Seoul /etc/localtime
+
 ENTRYPOINT ["/entrypoint.sh"]
